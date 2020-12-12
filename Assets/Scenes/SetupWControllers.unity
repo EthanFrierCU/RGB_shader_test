@@ -329,7 +329,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 268457553}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.47, z: 3.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1340674387}
@@ -898,6 +898,9 @@ GameObject:
   - component: {fileID: 1340674390}
   - component: {fileID: 1340674389}
   - component: {fileID: 1340674388}
+  - component: {fileID: 1340674392}
+  - component: {fileID: 1340674393}
+  - component: {fileID: 1340674391}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -912,13 +915,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340674386}
-  m_LocalRotation: {x: -0, y: 0.26488653, z: -0, w: 0.9642796}
-  m_LocalPosition: {x: 0, y: -0.29, z: 2.806}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 268457554}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 30.720001, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1340674388
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -979,6 +982,58 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340674386}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1340674391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340674386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3568d11e8095e4cdcab4484b7c5cef69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDistance: 1000000
+  debug: 0
+  type: spin
+  hoverTime: 1
+  moveTowardGrabberSpeed: 0
+  stopGrabbingDistance: 0.25
+--- !u!54 &1340674392
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340674386}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 14
+  m_CollisionDetection: 0
+--- !u!114 &1340674393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340674386}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 161b4502da8b245aba33cec40eea4a71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDistance: 1000000
+  debug: 0
+  type: spin
+  hoverTime: 1
+  moveTowardGrabberSpeed: 0
+  stopGrabbingDistance: 0.25
 --- !u!1001 &1410085442
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1423,10 +1478,40 @@ PrefabInstance:
       propertyPath: m_Name
       value: CamCtrlContainer
       objectReference: {fileID: 0}
+    - target: {fileID: 3944951350404304170, guid: 2106a2a366bfb4dadaf30d932d168800,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3944951350404304174, guid: 2106a2a366bfb4dadaf30d932d168800,
+        type: 3}
+      propertyPath: type
+      value: spin
+      objectReference: {fileID: 0}
+    - target: {fileID: 3944951350404304174, guid: 2106a2a366bfb4dadaf30d932d168800,
+        type: 3}
+      propertyPath: alwaysActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3944951350404304175, guid: 2106a2a366bfb4dadaf30d932d168800,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3944951351042337876, guid: 2106a2a366bfb4dadaf30d932d168800,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3944951351042337880, guid: 2106a2a366bfb4dadaf30d932d168800,
+        type: 3}
+      propertyPath: type
+      value: spin
+      objectReference: {fileID: 0}
+    - target: {fileID: 3944951351042337880, guid: 2106a2a366bfb4dadaf30d932d168800,
+        type: 3}
+      propertyPath: alwaysActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3944951351042337881, guid: 2106a2a366bfb4dadaf30d932d168800,
         type: 3}
