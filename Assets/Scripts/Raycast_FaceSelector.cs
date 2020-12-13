@@ -9,6 +9,7 @@ public class Raycast_FaceSelector : MonoBehaviour
     public string kind = "face";
     private Transform _selection;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,12 +23,14 @@ public class Raycast_FaceSelector : MonoBehaviour
         {
             var selectionRenderer = _selection.GetComponent<Renderer>();
             selectionRenderer.material = defaultMaterial;
+
             _selection = null;
+
         }
 
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-        if(Physics.Raycast(ray, out hit))
+        if (Physics.Raycast(ray, out hit))
         {
             var selection = hit.transform;
             if (selection.CompareTag(kind))
@@ -39,8 +42,9 @@ public class Raycast_FaceSelector : MonoBehaviour
                 }
 
                 _selection = selection;
+
             }
-          
+
         }
     }
 }

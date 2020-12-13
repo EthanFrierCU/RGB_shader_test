@@ -243,6 +243,7 @@ GameObject:
   - component: {fileID: 75034678}
   - component: {fileID: 75034677}
   - component: {fileID: 75034680}
+  - component: {fileID: 75034681}
   m_Layer: 0
   m_Name: Selector1
   m_TagString: face
@@ -339,6 +340,21 @@ MonoBehaviour:
   activeMaterial: {fileID: 2100000, guid: a9c021b8751da464aa4095883452b713, type: 2}
   defaultMaterial: {fileID: 2100000, guid: cb4b94606761d4d21b195c41a4388a83, type: 2}
   kind: face
+--- !u!114 &75034681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75034675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 453a295d9de38481db4ce97767086a40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragSpeed: 0.01
+  minY: -2
+  maxY: 2
 --- !u!1 &417141640
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,7 +700,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 35
+  field of view: 35.083294
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -835,6 +851,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1058506805}
   - component: {fileID: 1058506806}
+  - component: {fileID: 1058506807}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -877,6 +894,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotateSpeed: 5
   grabbed: 0
+--- !u!114 &1058506807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058506804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7ed72b712e944e51a6795d6c704e709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: 0
+  y: 0
+  z: 0
 --- !u!1 &1155562488
 GameObject:
   m_ObjectHideFlags: 0

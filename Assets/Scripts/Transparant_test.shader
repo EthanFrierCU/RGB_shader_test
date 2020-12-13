@@ -5,7 +5,7 @@ Shader "Unlit/Transparant_test"
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
-        _Color ("Color (RGBA)", Color) = (1, 1, 1, 1)
+        _Color ("Color (RGBA)", Color) = (1, 1, 1, 0)
     }
     SubShader
     {
