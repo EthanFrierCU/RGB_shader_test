@@ -10,6 +10,7 @@ public class Raycast_FaceSelector : MonoBehaviour
     private Transform _selection;
     public bool clicked;
     public GameObject thisFace;
+    public float opposing;
 
 
     // Start is called before the first frame update
@@ -27,21 +28,12 @@ public class Raycast_FaceSelector : MonoBehaviour
             selectionRenderer.material = defaultMaterial;
 
             _selection = null;
-
         }
-
-       
-
-
 
 
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
         RaycastHit hit;
-
         LayerMask selector = LayerMask.GetMask("Selectors");
-
-        
 
         if (Physics.Raycast(ray, out hit, 10, selector))
         { 

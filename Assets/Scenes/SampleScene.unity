@@ -173,6 +173,7 @@ MonoBehaviour:
   kind: face
   clicked: 0
   thisFace: {fileID: 8482384}
+  opposing: 0
 --- !u!65 &8482387
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -247,7 +248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragSpeed: 0.01
   minY: -0.75
-  maxY: 0.5
+  maxY: 0.25
 --- !u!1 &75034675
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,6 +361,7 @@ MonoBehaviour:
   kind: face
   clicked: 0
   thisFace: {fileID: 75034675}
+  opposing: 0
 --- !u!114 &75034681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -373,7 +375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragSpeed: 0.01
-  minY: -0.5
+  minY: -0.25
   maxY: 0.75
 --- !u!1 &417141640
 GameObject:
@@ -427,6 +429,7 @@ MonoBehaviour:
   kind: face
   clicked: 0
   thisFace: {fileID: 417141640}
+  opposing: 0
 --- !u!65 &417141643
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -500,7 +503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragSpeed: 0.01
-  minX: -0.5
+  minX: -0.25
   maxX: 0.75
 --- !u!1 &574489348
 GameObject:
@@ -716,6 +719,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 717939560}
+  - component: {fileID: 717939561}
   m_Layer: 0
   m_Name: Selectors
   m_TagString: Untagged
@@ -743,6 +747,18 @@ Transform:
   m_Father: {fileID: 1058506805}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &717939561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717939559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5eed4ac0c66d4203931e698c9b8513e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,6 +894,7 @@ MonoBehaviour:
   kind: face
   clicked: 0
   thisFace: {fileID: 1056247018}
+  opposing: 0
 --- !u!65 &1056247021
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -952,7 +969,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragSpeed: 0.01
   minX: -0.75
-  maxX: 0.5
+  maxX: 0.25
 --- !u!1 &1058506804
 GameObject:
   m_ObjectHideFlags: 0
@@ -1013,7 +1030,7 @@ GameObject:
   - component: {fileID: 1155562492}
   - component: {fileID: 1155562491}
   - component: {fileID: 1155562490}
-  - component: {fileID: 1155562494}
+  - component: {fileID: 1155562493}
   m_Layer: 8
   m_Name: Selector0
   m_TagString: face
@@ -1052,6 +1069,7 @@ MonoBehaviour:
   kind: face
   clicked: 0
   thisFace: {fileID: 1155562488}
+  opposing: 0
 --- !u!65 &1155562491
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1104,7 +1122,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &1155562494
+--- !u!114 &1155562493
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1113,12 +1131,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1155562488}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b23d9f0d62b754ff8825f08fcb57aa37, type: 3}
+  m_Script: {fileID: 11500000, guid: e69cb6d2ed51d4fe791614af70ea3404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dragSpeed: 0.01
   minZ: -0.75
-  maxZ: 0.5
+  maxZ: 0.25
+  selector5: {fileID: 1652534919}
+  faceZ0: 0
 --- !u!33 &1155562495
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1179,6 +1199,7 @@ MonoBehaviour:
   kind: face
   clicked: 0
   thisFace: {fileID: 1652534913}
+  opposing: 0
 --- !u!65 &1652534916
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1248,9 +1269,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1652534913}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b23d9f0d62b754ff8825f08fcb57aa37, type: 3}
+  m_Script: {fileID: 11500000, guid: 7e51fc87e2ced44aab315b55571e12cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dragSpeed: 0.01
-  minZ: -0.5
+  minZ: -0.25
   maxZ: 0.75
+  selector0: {fileID: 1155562493}
+  faceZ5: 0.5
