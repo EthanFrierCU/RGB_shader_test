@@ -29,17 +29,26 @@ public class Raycast_FaceSelector : MonoBehaviour
         }
 
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit))
+
+        LayerMask selector = LayerMask.GetMask("Selectors");
+
+        if (Physics.Raycast(ray, out hit, 10, selector))
         {
             var selection = hit.transform;
+
+
             if (selection.CompareTag(kind))
             {
                 var selectionRenderer = selection.GetComponent<Renderer>();
+
+
                 if (selectionRenderer != null)
                 {
                     selectionRenderer.material = activeMaterial;
                 }
+
 
                 _selection = selection;
 
