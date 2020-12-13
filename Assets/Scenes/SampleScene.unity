@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 8482387}
   - component: {fileID: 8482386}
   - component: {fileID: 8482390}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Selector4
   m_TagString: face
   m_Icon: {fileID: 0}
@@ -149,12 +149,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8482384}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.55, z: 0}
-  m_LocalScale: {x: 1, y: 0.05, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.75, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.05, z: 0.5}
   m_Children: []
-  m_Father: {fileID: 1058506805}
-  m_RootOrder: 5
+  m_Father: {fileID: 717939560}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8482386
 MonoBehaviour:
@@ -171,6 +171,8 @@ MonoBehaviour:
   activeMaterial: {fileID: 2100000, guid: a9c021b8751da464aa4095883452b713, type: 2}
   defaultMaterial: {fileID: 2100000, guid: cb4b94606761d4d21b195c41a4388a83, type: 2}
   kind: face
+  clicked: 0
+  thisFace: {fileID: 8482384}
 --- !u!65 &8482387
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -230,7 +232,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8482384}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &8482390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,7 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragSpeed: 0.01
-  minY: -1
+  minY: -0.75
   maxY: 0.5
 --- !u!1 &75034675
 GameObject:
@@ -260,7 +262,7 @@ GameObject:
   - component: {fileID: 75034677}
   - component: {fileID: 75034680}
   - component: {fileID: 75034681}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Selector1
   m_TagString: face
   m_Icon: {fileID: 0}
@@ -274,12 +276,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75034675}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.55, z: 0}
-  m_LocalScale: {x: 1, y: 0.05, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.75, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.05, z: 0.5}
   m_Children: []
-  m_Father: {fileID: 1058506805}
-  m_RootOrder: 2
+  m_Father: {fileID: 717939560}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &75034677
 BoxCollider:
@@ -340,7 +342,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75034675}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &75034680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,6 +358,8 @@ MonoBehaviour:
   activeMaterial: {fileID: 2100000, guid: a9c021b8751da464aa4095883452b713, type: 2}
   defaultMaterial: {fileID: 2100000, guid: cb4b94606761d4d21b195c41a4388a83, type: 2}
   kind: face
+  clicked: 0
+  thisFace: {fileID: 75034675}
 --- !u!114 &75034681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,7 +374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragSpeed: 0.01
   minY: -0.5
-  maxY: 1
+  maxY: 0.75
 --- !u!1 &417141640
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,7 +389,7 @@ GameObject:
   - component: {fileID: 417141643}
   - component: {fileID: 417141642}
   - component: {fileID: 417141646}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Selector2
   m_TagString: face
   m_Icon: {fileID: 0}
@@ -399,12 +403,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 417141640}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.55, y: 0, z: 0}
-  m_LocalScale: {x: 0.05, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.75, y: 0, z: 0}
+  m_LocalScale: {x: 0.05, y: 0.5, z: 0.5}
   m_Children: []
-  m_Father: {fileID: 1058506805}
-  m_RootOrder: 3
+  m_Father: {fileID: 717939560}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &417141642
 MonoBehaviour:
@@ -421,6 +425,8 @@ MonoBehaviour:
   activeMaterial: {fileID: 2100000, guid: a9c021b8751da464aa4095883452b713, type: 2}
   defaultMaterial: {fileID: 2100000, guid: cb4b94606761d4d21b195c41a4388a83, type: 2}
   kind: face
+  clicked: 0
+  thisFace: {fileID: 417141640}
 --- !u!65 &417141643
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -480,7 +486,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 417141640}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &417141646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -495,7 +501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragSpeed: 0.01
   minX: -0.5
-  maxX: 1
+  maxX: 0.75
 --- !u!1 &574489348
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,6 +514,7 @@ GameObject:
   - component: {fileID: 574489353}
   - component: {fileID: 574489352}
   - component: {fileID: 574489351}
+  - component: {fileID: 574489350}
   m_Layer: 0
   m_Name: RGB Cube
   m_TagString: Untagged
@@ -529,6 +536,25 @@ Transform:
   m_Father: {fileID: 1058506805}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &574489350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574489348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80fb56b5b979b4d1ea004c9cc449771a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selector0: {fileID: 1155562488}
+  selector1: {fileID: 75034675}
+  selector2: {fileID: 417141640}
+  selector3: {fileID: 1056247018}
+  selector4: {fileID: 8482384}
+  selector5: {fileID: 1652534913}
+  distanceOffset: 0.5
 --- !u!65 &574489351
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -681,6 +707,42 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &717939559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 717939560}
+  m_Layer: 0
+  m_Name: Selectors
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &717939560
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717939559}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1155562489}
+  - {fileID: 75034676}
+  - {fileID: 417141641}
+  - {fileID: 1056247019}
+  - {fileID: 8482385}
+  - {fileID: 1652534914}
+  m_Father: {fileID: 1058506805}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,7 +840,7 @@ GameObject:
   - component: {fileID: 1056247021}
   - component: {fileID: 1056247020}
   - component: {fileID: 1056247024}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Selector3
   m_TagString: face
   m_Icon: {fileID: 0}
@@ -792,12 +854,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056247018}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.55, y: 0, z: 0}
-  m_LocalScale: {x: 0.05, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.75, y: 0, z: 0}
+  m_LocalScale: {x: 0.05, y: 0.5, z: 0.5}
   m_Children: []
-  m_Father: {fileID: 1058506805}
-  m_RootOrder: 4
+  m_Father: {fileID: 717939560}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1056247020
 MonoBehaviour:
@@ -814,6 +876,8 @@ MonoBehaviour:
   activeMaterial: {fileID: 2100000, guid: a9c021b8751da464aa4095883452b713, type: 2}
   defaultMaterial: {fileID: 2100000, guid: cb4b94606761d4d21b195c41a4388a83, type: 2}
   kind: face
+  clicked: 0
+  thisFace: {fileID: 1056247018}
 --- !u!65 &1056247021
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -873,7 +937,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056247018}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &1056247024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -887,7 +951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragSpeed: 0.01
-  minX: -1
+  minX: -0.75
   maxX: 0.5
 --- !u!1 &1058506804
 GameObject:
@@ -899,9 +963,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1058506805}
   - component: {fileID: 1058506806}
-  - component: {fileID: 1058506807}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: RGB Interact
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -919,12 +982,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 574489349}
-  - {fileID: 1155562489}
-  - {fileID: 75034676}
-  - {fileID: 417141641}
-  - {fileID: 1056247019}
-  - {fileID: 8482385}
-  - {fileID: 1652534914}
+  - {fileID: 717939560}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -942,21 +1000,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotateSpeed: 5
   grabbed: 0
---- !u!114 &1058506807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1058506804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7ed72b712e944e51a6795d6c704e709, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  x: 0
-  y: 0
-  z: 0
 --- !u!1 &1155562488
 GameObject:
   m_ObjectHideFlags: 0
@@ -966,12 +1009,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1155562489}
-  - component: {fileID: 1155562493}
+  - component: {fileID: 1155562495}
   - component: {fileID: 1155562492}
   - component: {fileID: 1155562491}
   - component: {fileID: 1155562490}
   - component: {fileID: 1155562494}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Selector0
   m_TagString: face
   m_Icon: {fileID: 0}
@@ -985,12 +1028,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1155562488}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.55}
-  m_LocalScale: {x: 1, y: 1, z: 0.05}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.75}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.05}
   m_Children: []
-  m_Father: {fileID: 1058506805}
-  m_RootOrder: 1
+  m_Father: {fileID: 717939560}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1155562490
 MonoBehaviour:
@@ -1007,6 +1050,8 @@ MonoBehaviour:
   activeMaterial: {fileID: 2100000, guid: a9c021b8751da464aa4095883452b713, type: 2}
   defaultMaterial: {fileID: 2100000, guid: cb4b94606761d4d21b195c41a4388a83, type: 2}
   kind: face
+  clicked: 0
+  thisFace: {fileID: 1155562488}
 --- !u!65 &1155562491
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1059,14 +1104,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1155562493
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1155562488}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &1155562494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1080,8 +1117,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragSpeed: 0.01
-  minZ: -0.5
-  maxZ: 1
+  minZ: -0.75
+  maxZ: 0.5
+--- !u!33 &1155562495
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155562488}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1652534913
 GameObject:
   m_ObjectHideFlags: 0
@@ -1096,7 +1141,7 @@ GameObject:
   - component: {fileID: 1652534916}
   - component: {fileID: 1652534915}
   - component: {fileID: 1652534919}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Selector5
   m_TagString: face
   m_Icon: {fileID: 0}
@@ -1110,12 +1155,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652534913}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.55}
-  m_LocalScale: {x: 1, y: 1, z: 0.05}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.75}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.05}
   m_Children: []
-  m_Father: {fileID: 1058506805}
-  m_RootOrder: 6
+  m_Father: {fileID: 717939560}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1652534915
 MonoBehaviour:
@@ -1132,6 +1177,8 @@ MonoBehaviour:
   activeMaterial: {fileID: 2100000, guid: a9c021b8751da464aa4095883452b713, type: 2}
   defaultMaterial: {fileID: 2100000, guid: cb4b94606761d4d21b195c41a4388a83, type: 2}
   kind: face
+  clicked: 0
+  thisFace: {fileID: 1652534913}
 --- !u!65 &1652534916
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1191,7 +1238,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652534913}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &1652534919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1206,4 +1253,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragSpeed: 0.01
   minZ: -0.5
-  maxZ: 1
+  maxZ: 0.75

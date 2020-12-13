@@ -20,12 +20,12 @@ public class Rotate_Keys : MonoBehaviour
         if (spinX != 0)
         {
             grabbed = true;
-            transform.Rotate(Vector3.right, spinX, Space.World);
+            transform.Rotate(Vector3.right, spinX);
         }
         else if (spinY != 0)
         {
             grabbed = true;
-            transform.Rotate(Vector3.up, -spinY, Space.World);
+            transform.Rotate(Vector3.up, -spinY);
         }
         else if (spinX == 0 && spinY == 0)
         {
