@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class MouseDrag_x_axis_s_2 : MonoBehaviour
 {
-    private float dragSpeed = .01f;
     private float minX = -.25f;
     private float maxX = .75f;
-    private Vector3 lastMousePos;
     public MouseDrag_x_axis_s_3 selector3;
     public float faceX2;
     private float offsetDistance = .25f;
     private float minimumDistance = .1f;
+    private Vector3 screenPoint;
+    private Vector3 offset;
 
 
     private void Start()
@@ -21,23 +21,25 @@ public class MouseDrag_x_axis_s_2 : MonoBehaviour
 
     void OnMouseDown()
     {
-        lastMousePos = Input.mousePosition;
+        screenPoint = Camera.main.WorldToScreenPoint(transform.position);
+        offset = transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
     }
+
 
     void OnMouseDrag()
     {
-        Vector3 delta = Input.mousePosition - lastMousePos;
-        Vector3 pos = transform.localPosition;
+        Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
+        Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + offset;
 
-        pos.x += delta.x * dragSpeed;
-        pos.x = Mathf.Clamp(pos.x, minX, maxX);
+        curPosition.x = Mathf.Clamp(curPosition.x, minX, maxX);
+        curPosition.y = 0;
+        curPosition.z = 0;
 
-        faceX2 = pos.x - offsetDistance;
+        faceX2 = curPosition.x - offsetDistance;
 
         if (faceX2 > selector3.faceX3 + minimumDistance)
         {
-            transform.localPosition = pos;
-            lastMousePos = Input.mousePosition;
+            transform.localPosition = curPosition;
         }
 
     }
