@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class MouseDrag_z_axis_s_0 : MonoBehaviour
 {
-    public float dragSpeed = .01f;
-    public float minZ = -.75f;
-    public float maxZ = .25f;
+    private float dragSpeed = .01f;
+    private float minZ = -.75f;
+    private float maxZ = .25f;
     private Vector3 lastMousePos;
     public MouseDrag_z_axis_s_5 selector5;
     public float faceZ0;

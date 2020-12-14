@@ -2,21 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MouseDrag_z_axis_s_5 : MonoBehaviour
+public class MouseDrag_y_axis_s_1 : MonoBehaviour
 {
     private float dragSpeed = .01f;
-    private float minZ = -.25f;
-    private float maxZ = .75f;
+    private float minY = -.25f;
+    private float maxY = .75f;
     private Vector3 lastMousePos;
-    public MouseDrag_z_axis_s_0 selector0;
-    public float faceZ5;
+    public MouseDrag_y_axis_s_4 selector4;
+    public float faceY1 = .5f;
     private float offsetDistance = .25f;
     private float minimumDistance = .1f;
 
 
     private void Start()
     {
-        faceZ5 = .5f;
+        faceY1 = .5f;
     }
 
     void OnMouseDown()
@@ -29,17 +29,19 @@ public class MouseDrag_z_axis_s_5 : MonoBehaviour
         Vector3 delta = Input.mousePosition - lastMousePos;
         Vector3 pos = transform.localPosition;
 
-        pos.z += delta.x * dragSpeed;
-        pos.z = Mathf.Clamp(pos.z, minZ, maxZ);
+        pos.y += delta.y * dragSpeed;
+        pos.y = Mathf.Clamp(pos.y, minY, maxY);
 
-        faceZ5 = pos.z - offsetDistance;
+        faceY1 = pos.y - offsetDistance;
 
-        if (faceZ5 > selector0.faceZ0 + minimumDistance)
+        if (faceY1 > selector4.faceY4 + minimumDistance)
         {
             transform.localPosition = pos;
-            lastMousePos = Input.mousePosition;
         }
 
-    }
+        lastMousePos = Input.mousePosition;
 
+
+    }
 }
+
